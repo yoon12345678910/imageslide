@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Javascript Slide Example</title>
+<link rel="stylesheet" href="style.css">
+<body>
+<div id="slide" class="slide">
+   <ul id="slider">
+      <li>
+         <img src="http://ncc.phinf.naver.net/20151012_296/1444628449822UL5dn_JPEG/01.jpg?type=w646" alt="맥주 여섯개에 둘러싸인 브라운">
+      </li>
+      <li>
+         <img src="http://ncc.phinf.naver.net/20151008_218/1444281668597tueHo_JPEG/15.jpg?type=w646" alt="참치, 광어, 흑새치 뱃살이 나온 모듬회">
+      </li>
+      <li>
+         <img src="http://imgnews.naver.net/image/460/2015/10/14/115047284_GettyImages-492525024.jpg?type=w540" alt="라인 미니피규어 6종과 코니 저금통, 조은이 여자친구에게 선물해주었다">
+      </li>
+      <li>
+         <img src="https://scontent-hkg3-1.xx.fbcdn.net/hphotos-xat1/t31.0-8/11221328_844410902308556_2439563029259917204_o.jpg" alt="조은이 월드 오브 워크래프트에서 키우는 오크 전사 스크린샷">
+      </li>
+   </ul>
+   <button type="button" onclick="btnLeft()" class="btn-left"></button>
+   <button type="button" onclick="btnRight()" class="btn-right"></button>
+   <!-- index 구현 시 가산점 -->
+   <div id="index" class="index">
+      <a href="#" class="index-item index-item-on">1</a>
+      <a href="#" class="index-item">2</a>
+      <a href="#" class="index-item">3</a>
+      <a href="#" class="index-item">4</a>
+   </div>
+   <!--   -->
+   <div class="controller">
+      <button type="button" onclick="autoPlay()" class="btn-play">재생</button>
+      <button type="button" onclick="autoPause()" id="btn-pause" class="btn-pause">정지</button>
+   </div>
+</div>
+  
+  <script src="slideshow.js"></script>
+
+</body>
+</html>
